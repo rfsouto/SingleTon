@@ -63,6 +63,7 @@ namespace SingleTon
             }
         }
 
+        //Propiedad para recuperar la fecha de creación de la primera instancia de SingletonClass
         public DateTime CreatedTime
         {
             get
