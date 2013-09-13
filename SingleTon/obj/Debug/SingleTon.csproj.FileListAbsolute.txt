@@ -1,0 +1,6 @@
+C:\Proyectos\SingleTon\SingleTon\bin\Debug\SingleTon.exe.config
+C:\Proyectos\SingleTon\SingleTon\bin\Debug\SingleTon.exe
+C:\Proyectos\SingleTon\SingleTon\bin\Debug\SingleTon.pdb
+C:\Proyectos\SingleTon\SingleTon\obj\Debug\SingleTon.csprojResolveAssemblyReference.cache
+C:\Proyectos\SingleTon\SingleTon\obj\Debug\SingleTon.exe
+C:\Proyectos\SingleTon\SingleTon\obj\Debug\SingleTon.pdb
