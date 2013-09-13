@@ -11,10 +11,10 @@ namespace SingleTon
         static void Main(string[] args)
         {
 
-            SingletonClass s1 = SingletonClass.Instancia;
+            Singleton s1 = Singleton.Instancia;
             System.Threading.Thread.Sleep(500);
             DateTime dateTime1 = DateTime.Now;
-            SingletonClass s2 = SingletonClass.Instancia;
+            Singleton s2 = Singleton.Instancia;
             if (s1 == s2)
             {
                 Console.WriteLine("************************ El patrón Singleton **************************");
@@ -39,32 +39,32 @@ namespace SingleTon
     }
         
 
-    public class SingletonClass
+    public class Singleton
     {
         //Los ejemplos indican que hay que igualarla a null. ¿Es estrictamente necesario?
-        private static SingletonClass _instancia;
+        private static Singleton _instancia;
         private static DateTime _createdTime;
 
-        private SingletonClass()
+        static Singleton()
         {
             //establecemos la fecha de creación del objeto de la clase SingletonClass
             _createdTime = DateTime.Now;
         }
 
         //Propiedad accesible para recuperar la instancia de la clase o crearla si no existe. 
-        public static SingletonClass Instancia
+        public static Singleton Instancia
         {
             get
             {
                 if (_instancia == null)
-                    _instancia = new SingletonClass();
+                    _instancia = new Singleton();
 
                 return _instancia;
             }
         }
 
         //Propiedad para recuperar la fecha de creación de la primera instancia de SingletonClass
-        public DateTime CreatedTime
+        public static DateTime CreatedTime
         {
             get
             {
