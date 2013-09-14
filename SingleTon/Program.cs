@@ -27,7 +27,7 @@ namespace SingleTon
                 Console.WriteLine("*   que nos interesaría tener solamente una instancia de la misma.    *");
                 Console.WriteLine("*                                                                     *");
                 Console.WriteLine("*               Tiempo de creación del primero objeto:                *");
-                Console.WriteLine("*                           {0} milisegundos                          *", s1.CreatedTime.Millisecond.ToString());
+                Console.WriteLine("*                           {0} milisegundos                          *", s1.CreatedTime.Millisecond);
                 Console.WriteLine("*          Tiempo de llamada de creación del segundo objeto:          *");
                 Console.WriteLine("*                           {0} milisegundos                          *", dateTime1.Millisecond.ToString());
                 Console.WriteLine("*                Tiempo de creación del segundo objeto:               *");
@@ -47,7 +47,7 @@ namespace SingleTon
 
         static Singleton()
         {
-            //establecemos la fecha de creación del objeto de la clase SingletonClass
+            //establecemos la fecha de creación del objeto de la clase Singleot
             _createdTime = DateTime.Now;
         }
 
@@ -63,8 +63,8 @@ namespace SingleTon
             }
         }
 
-        //Propiedad para recuperar la fecha de creación de la primera instancia de SingletonClass
-        public static DateTime CreatedTime
+        //Propiedad para recuperar la fecha de creación de la primera instancia de la clase Singleton
+        public DateTime CreatedTime
         {
             get
             {
